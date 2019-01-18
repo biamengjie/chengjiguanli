@@ -43,9 +43,18 @@ int main()
 
         }
         if(r==2){
+
             
         }
         if(r==3){
+            printf("xianshisouyouxueshengchengji:\n");
+            for(int i=0;i<index;i++){
+                printf("%d%s%d%d%d\n",i+1,www[i].name,www[index].yuwen,www[index].shuxue,www[index].yingyu);
+            }
+printf("dianjihuichejixu;\n");
+char x;
+            scanf("%c",&x);
+            scanf("%c",&x);
             
         }
         if(r==4){
