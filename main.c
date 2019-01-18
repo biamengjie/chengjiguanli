@@ -118,7 +118,7 @@ int main()
                 }
                 
             }
-            printf("%s %d\n",www[i].name,max);
+            printf("%d\n",max);
             printf("dianjihuichejixu:\n");
             char x;
             scanf("%c", &x);
