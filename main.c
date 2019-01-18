@@ -103,26 +103,27 @@ int main()
             scanf("%c", &x);
             scanf("%c", &x);
         }
-       /* if (r == 6)
+        if (r == 6)
         {
             printf("xianshizongfenzuigaodexuesheng:\n");
             int max = 0;
-            int gg;
+            
             for (int i = 0; i < index; i++)
-            {
+            {  
+                int sum=0;
+                sum=www[i].yuwen+www[i].shuxue+www[i].yingyu;
                 if (max < sum)
                 {
                     max = sum;
-                    gg = i + 1;
                 }
                 
             }
-            printf("%d %szongchengjizuigao,zuigaowei%d\n", gg, www[gg-1].name,max);
+            printf("%s %d\n",www[i].name,max);
             printf("dianjihuichejixu:\n");
             char x;
             scanf("%c", &x);
             scanf("%c", &x);
-        }*/
+        }
         if (r == 7)
         {
         }
