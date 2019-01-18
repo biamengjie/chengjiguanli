@@ -5,11 +5,13 @@ struct Student
     int shuxue;
     int yingyu;
     char name[100];
+    
 };
 int main()
 {
     struct Student www[1000];
     int index = 0;
+int sum=0;
     printf("xueshengchengjiguanlixitong:\n");
     while (1)
     {
@@ -61,31 +63,43 @@ int main()
                 scanf("%c", &x);
             }
         }
-            if (r == 3)
+        if (r == 3)
+        {
+            printf("xianshisouyouxueshengchengji:\n");
+            for (int i = 0; i < index; i++)
             {
-                printf("xianshisouyouxueshengchengji:\n");
-                for (int i = 0; i < index; i++)
+                printf("%d%s%d%d%d\n", i + 1, www[i].name, www[i].yuwen, www[i].shuxue, www[i].yingyu);
+            }
+            printf("dianjihuichejixu;\n");
+            char x;
+            scanf("%c", &x);
+            scanf("%c", &x);
+        }
+        if (r == 4)
+        {
+            for (int i = 0; i < index; i++)
+            {
+                sum=www[i].yuwen + www[i].shuxue + www[i].yingyu;
+                if (sum < 180)
                 {
-                    printf("%d%s%d%d%d\n", i + 1, www[i].name, www[i].yuwen, www[i].shuxue, www[i].yingyu);
+                    printf("%d %s\n", i + 1, www[i].name);
                 }
-                printf("dianjihuichejixu;\n");
-                char x;
-                scanf("%c", &x);
-                scanf("%c", &x);
             }
-            if (r == 4)
-            {
-            }
-            if (r == 5)
-            {
-            }
-            if (r == 6)
-            {
-            }
-            if (r == 7)
-            {
-            }
+            printf("dianjihuichejixu:\n");
+            char x;
+            scanf("%c", &x);
+            scanf("%c", &x);
+        }
+        if (r == 5)
+        {
+        }
+        if (r == 6)
+        {
+        }
+        if (r == 7)
+        {
+        }
     }
 
-        return 0;
+    return 0;
 }
