@@ -107,17 +107,18 @@ int main()
         {
             printf("xianshizongfenzuigaodexuesheng:\n");
             int max = 0;
-
+int ID=0;
             for (int i = 0; i < index; i++)
             {
-                int sum = 0;
+                int sum =www[i].yuwen + www[i].shuxue + www[i].yingyu; 
                 sum = www[i].yuwen + www[i].shuxue + www[i].yingyu;
                 if (max < sum)
                 {
                     max = sum;
+                    ID=i;
                 }
             }
-            printf("%d\n", max);
+            printf("%s%d%d%d\n",www[ID].name,www[ID].yuwen,www[ID].shuxue,www[ID].yingyu);
             printf("dianjihuichejixu:\n");
             char x;
             scanf("%c", &x);
