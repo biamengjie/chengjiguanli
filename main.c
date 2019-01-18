@@ -146,6 +146,11 @@ int main()
             scanf("%c", &x);
             scanf("%c", &x);
         }
+        if(r==8){
+            printf("chengxutuichu:\n");
+            break;
+        }
+        
     }
 
     return 0;
