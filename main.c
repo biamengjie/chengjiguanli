@@ -107,18 +107,17 @@ int main()
         {
             printf("xianshizongfenzuigaodexuesheng:\n");
             int max = 0;
-            
+
             for (int i = 0; i < index; i++)
-            {  
-                int sum=0;
-                sum=www[i].yuwen+www[i].shuxue+www[i].yingyu;
+            {
+                int sum = 0;
+                sum = www[i].yuwen + www[i].shuxue + www[i].yingyu;
                 if (max < sum)
                 {
                     max = sum;
                 }
-                
             }
-            printf("%d\n",max);
+            printf("%d\n", max);
             printf("dianjihuichejixu:\n");
             char x;
             scanf("%c", &x);
@@ -126,6 +125,26 @@ int main()
         }
         if (r == 7)
         {
+
+            double max = 0.0;
+            int ID = 0;
+            for (int i = 0; i < index; i++)
+            {
+                if ((www[i].yuwen && www[i].shuxue && www[i].yingyu) >= 60)
+                {
+                    double aver = (www[i].yuwen + www[i].shuxue + www[i].yingyu) / 3.0;
+                    if (max < aver)
+                    {
+                        max = aver;
+                        ID = i;
+                    }
+                }
+            }
+            printf("pingjiufenzuigaoqiemeiyoubujigedexueshengxingmingwei %s,%d,%d,%d\n", www[ID].name, www[ID].yuwen, www[ID].shuxue, www[ID].yingyu);
+            printf("dianjihuichejixu:\n");
+            char x;
+            scanf("%c", &x);
+            scanf("%c", &x);
         }
     }
 
