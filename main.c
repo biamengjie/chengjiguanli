@@ -92,6 +92,11 @@ int sum=0;
         }
         if (r == 5)
         {
+            for(int i=0;i<index;i++){
+                if((www[i].yuwen&&www[i].shuxue&&www[i].yingyu)<60){
+                    printf("dianjihuichujixu:\n");
+                }
+            }
         }
         if (r == 6)
         {
